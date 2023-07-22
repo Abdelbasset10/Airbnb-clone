@@ -29,7 +29,7 @@ const RegisterModal = () => {
     }
     try {
       setLoading(true)
-      const response = await fetch(`http://localhost:3000/api/register`,{
+      const response = await fetch(`https://abdelbasset-airbnb-4t6usuhck-abdelbasset10.vercel.app/api/register`,{
         method:"POST",
         headers: {
           "Content-Type": "application/json",

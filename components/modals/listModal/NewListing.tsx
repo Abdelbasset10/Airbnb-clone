@@ -62,7 +62,7 @@ const NewListing = () => {
             }
             try {
                 setLoading(true)
-                const res = await fetch(`http://localhost:3000/api/listing`,{
+                const res = await fetch(`https://abdelbasset-airbnb-4t6usuhck-abdelbasset10.vercel.app/api/listing`,{
                 method:"POST",
                 headers: {
                     "Content-Type": "application/json",
