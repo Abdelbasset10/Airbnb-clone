@@ -12,7 +12,7 @@ const Heart = ({listingId,isFavorite} : Props) => {
     const [favorite,setFavorite] = useState(ok)
 
     const handleLikeDislike = async () => {
-        const response = await fetch(`https://abdelbasset-airbnb-4t6usuhck-abdelbasset10.vercel.app/api/listing/favorite/${listingId}`,{
+        const response = await fetch(`https://abdelbasset-airbnb-rjvfrs8or-abdelbasset10.vercel.app/api/listing/favorite/${listingId}`,{
             method:"PATCH"
         })
         const data = await response.json()

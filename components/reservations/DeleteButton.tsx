@@ -17,7 +17,7 @@ const DeleteButton = ({userId,reservationId,listingId} : Props) => {
     const handleCancelReservation = async () => {
         try {
             setLoading(true)
-            await fetch(`https://abdelbasset-airbnb-4t6usuhck-abdelbasset10.vercel.app/api/reservation/${reservationId}`,{
+            await fetch(`https://abdelbasset-airbnb-rjvfrs8or-abdelbasset10.vercel.app/api/reservation/${reservationId}`,{
                 method:"DELETE"
             })
             router.refresh()
