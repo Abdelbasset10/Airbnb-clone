@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { fetchListings } from "@/actions/listings/actions"
 import Listing from "@/components/listings/Listing"
 import { Listing as ListingType } from "@prisma/client"
