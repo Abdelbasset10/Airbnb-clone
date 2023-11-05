@@ -17,7 +17,7 @@ const DeleteButton = ({userId,reservationId,listingId} : Props) => {
     const handleCancelReservation = async () => {
         try {
             setLoading(true)
-            await fetch(`http://localhost:3000/api/reservation/${reservationId}`,{
+            await fetch(`${process.env.NEXTAUTH_URL}api/reservation/${reservationId}`,{
                 method:"DELETE"
             })
             router.refresh()

@@ -16,7 +16,7 @@ interface Query {
     endDate?:string
 }
 
-const url =`http://localhost:3000/api/listing`
+const url =`${process.env.NEXTAUTH_URL}api/listing`
 
 export const fetchListings = async (query : Query) => {
     try {

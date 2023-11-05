@@ -16,7 +16,7 @@ const DeleteButton = ({listingId} : Props) => {
     const handleDeleteListing = async () => {
         try {
             setLoading(true)
-            await fetch(`http://localhost:3000/api/listing/${listingId}`,{
+            await fetch(`${process.env.NEXTAUTH_URL}api/listing/${listingId}`,{
                 method:"DELETE"
             })
             router.refresh()

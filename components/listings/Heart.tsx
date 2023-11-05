@@ -12,7 +12,7 @@ const Heart = ({listingId,isFavorite} : Props) => {
     const [favorite,setFavorite] = useState(ok)
 
     const handleLikeDislike = async () => {
-        const response = await fetch(`http://localhost:3000/api/listing/favorite/${listingId}`,{
+        const response = await fetch(`${process.env.NEXTAUTH_URL}api/listing/favorite/${listingId}`,{
             method:"PATCH"
         })
         const data = await response.json()

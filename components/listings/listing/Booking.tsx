@@ -51,7 +51,7 @@ const Booking = ({userId,price, listingId, reservations} : Props) => {
     }
     try {
       setLoading(true)
-      const res = await fetch(`http://localhost:3000/api/reservation`,{
+      const res = await fetch(`${process.env.NEXTAUTH_URL}api/reservation`,{
       method:"POST",
       headers: {
         "Content-Type": "application/json",

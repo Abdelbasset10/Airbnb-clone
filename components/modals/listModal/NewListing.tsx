@@ -62,7 +62,7 @@ const NewListing = () => {
             }
             try {
                 setLoading(true)
-                const res = await fetch(`http://localhost:3000/api/listing`,{
+                const res = await fetch(`${process.env.NEXTAUTH_URL}api/listing`,{
                 method:"POST",
                 headers: {
                     "Content-Type": "application/json",
