@@ -16,7 +16,7 @@ const DeleteButton = ({listingId} : Props) => {
     const handleDeleteListing = async () => {
         try {
             setLoading(true)
-            await fetch(`https://abdelbasset-airbnb-rjvfrs8or-abdelbasset10.vercel.app/api/listing/${listingId}`,{
+            await fetch(`http://localhost:3000/api/listing/${listingId}`,{
                 method:"DELETE"
             })
             router.refresh()

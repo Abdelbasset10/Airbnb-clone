@@ -16,7 +16,7 @@ interface Query {
     endDate?:string
 }
 
-const url =`https://abdelbasset-airbnb-rjvfrs8or-abdelbasset10.vercel.app/api/listing`
+const url =`http://localhost:3000/api/listing`
 
 export const fetchListings = async (query : Query) => {
     try {

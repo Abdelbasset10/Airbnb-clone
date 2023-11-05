@@ -51,7 +51,7 @@ const Booking = ({userId,price, listingId, reservations} : Props) => {
     }
     try {
       setLoading(true)
-      const res = await fetch(`https://abdelbasset-airbnb-rjvfrs8or-abdelbasset10.vercel.app/api/reservation`,{
+      const res = await fetch(`http://localhost:3000/api/reservation`,{
       method:"POST",
       headers: {
         "Content-Type": "application/json",
@@ -64,6 +64,8 @@ const Booking = ({userId,price, listingId, reservations} : Props) => {
         totalPrice
       }),
     })
+    const res2 = await res.json()
+    console.log( res2)
       router.refresh()
       toast.success("Listing reserved!")
     } catch (error  : any) {

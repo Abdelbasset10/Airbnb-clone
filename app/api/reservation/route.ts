@@ -7,12 +7,15 @@ import { authOptions } from "@/lib/auth";
 export const POST = async (req:NextRequest) => {
     try {
         const session = await getServerSession(authOptions)
+        console.log(session)
 
         if(!session?.user){
             return new NextResponse(JSON.stringify({message:"You have to signIn before!"}),{status:401})
         }
 
         const {listingId,startDate,endDate,totalPrice} = await req.json()
+
+        console.log(listingId)
 
         if(!listingId || !startDate || !endDate || !totalPrice){
             return new NextResponse(JSON.stringify({message:"Missing informations!"}),{status:400})
