@@ -17,7 +17,7 @@ const DeleteButton = ({userId,reservationId,listingId} : Props) => {
     const handleCancelReservation = async () => {
         try {
             setLoading(true)
-            await fetch(`https://vercel.com/abdelbasset10/abdelbasset-reserve/api/reservation/${reservationId}`,{
+            await fetch(`https://abdelbasset-reserve.vercel.app/api/reservation/${reservationId}`,{
                 method:"DELETE"
             })
             router.refresh()

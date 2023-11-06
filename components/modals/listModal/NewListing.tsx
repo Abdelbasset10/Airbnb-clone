@@ -62,7 +62,7 @@ const NewListing = () => {
             }
             try {
                 setLoading(true)
-                const res = await fetch(`https://vercel.com/abdelbasset10/abdelbasset-reserve/api/listing`,{
+                const res = await fetch(`https://abdelbasset-reserve.vercel.app/api/listing`,{
                 method:"POST",
                 headers: {
                     "Content-Type": "application/json",

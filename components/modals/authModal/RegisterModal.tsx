@@ -29,7 +29,7 @@ const RegisterModal = () => {
     }
     try {
       setLoading(true)
-      const response = await fetch(`https://vercel.com/abdelbasset10/abdelbasset-reserve/api/register`,{
+      const response = await fetch(`https://abdelbasset-reserve.vercel.app/api/register`,{
         method:"POST",
         headers: {
           "Content-Type": "application/json",

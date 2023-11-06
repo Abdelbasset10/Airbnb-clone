@@ -16,7 +16,7 @@ const DeleteButton = ({listingId} : Props) => {
     const handleDeleteListing = async () => {
         try {
             setLoading(true)
-            await fetch(`https://vercel.com/abdelbasset10/abdelbasset-reserve/api/listing/${listingId}`,{
+            await fetch(`https://abdelbasset-reserve.vercel.app/api/listing/${listingId}`,{
                 method:"DELETE"
             })
             router.refresh()
