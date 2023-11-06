@@ -19,6 +19,8 @@ interface Query {
 const url =`${process.env.NEXTAUTH_URL}api/listing`
 
 export const fetchListings = async (query : Query) => {
+    const session = await getServerSession(authOptions)
+    console.log(session)
     try {
         const URL = qs.stringifyUrl({
             url,

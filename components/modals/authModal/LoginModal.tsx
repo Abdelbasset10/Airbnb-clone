@@ -78,7 +78,7 @@ const LoginModal = () => {
           disabled={loading}
           className="h-16 px-2 w-full border-[1px] border-neutral-500 rounded-lg outline-none"
         />
-         <button className={`relative py-2 w-full flex items-center justify-center ${loading ? "bg-black hover:bg-neutral-700 border-neutral-700" : "bg-rose-500 hover:bg-rose-400 border-rose-500"} text-white  rounded-lg `} >Continue</button>
+         <button disabled={loading} className={`relative py-2 w-full flex items-center justify-center ${loading ? "bg-black hover:bg-neutral-700 border-neutral-700" : "bg-rose-500 hover:bg-rose-400 border-rose-500"} text-white  rounded-lg `} >Continue</button>
       </form>
     </Modal>
   )

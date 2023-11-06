@@ -37,13 +37,14 @@ const Modal = ({open,name,title,subTitle,children} : Props) => {
     }
   }
 
-  const googleSignIn = async () => {
-    await signIn("google")
-  }
+  // const googleSignIn = async () => {
+  //   const result = await signIn("google")
+  //   console.log(result)
+  // }
 
-  const githubSignIn = async () => {
-    await signIn("github")
-  }
+  // const githubSignIn = async () => {
+  //   await signIn("github")
+  // }
 
   if(!isMounted){
     return null
@@ -67,7 +68,7 @@ const Modal = ({open,name,title,subTitle,children} : Props) => {
             <h3 className='text-neutral-400' >{subTitle}</h3>
           </div>
           {children}
-          <hr />
+          {/* <hr />
           <div className='my-4 flex flex-col gap-4' >
             <button className='relative py-2 w-full flex items-center justify-center border-[2px] rounded-lg hover:border-rose-500 border-black' onClick={googleSignIn} >
               <FcGoogle className='absolute left-8 top-0 bottom-0 my-auto text-2xl' />
@@ -77,7 +78,7 @@ const Modal = ({open,name,title,subTitle,children} : Props) => {
               <FaGithub className='absolute left-8 top-0 bottom-0 my-auto text-2xl' />
               <p className='text-lg font-bold' >Continue with Github</p>
             </button>
-          </div> 
+          </div>  */}
         </div>
         <hr/>
         <div className='flex items-center justify-center gap-2 mt-4' >
