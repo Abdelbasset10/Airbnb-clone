@@ -10,7 +10,7 @@ const Error = () => {
     }
 
     return (
-        <div className="w-full h-screen flex items-center justify-center" >
+        <div className="w-full h-[70vh] flex flex-col items-center justify-center " >
             <div className="flex flex-col items-center justify-center " >
                 <h1 className="text-lg font-bold" >Ooops.</h1>
                 <p className="text-neutral-500" >Something is wrong!</p>

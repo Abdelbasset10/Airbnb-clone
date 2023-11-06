@@ -55,9 +55,9 @@ const MenuItems = ({userId, picture} : Props) => {
             {openMenu && (
                 userId ? (
                     <div className='absolute top-12 w-48 right-0 z-50  flex flex-col items-start  shadow-sm rounded-lg bg-white border-[1px] border-neutral-200'>
-                        <button className='hover:bg-neutral-100 w-full text-left px-4 py-2' onClick={()=>router.push('/trips')} >My trips</button>
+                        <button className='hover:bg-neutral-100 w-full text-left px-4 py-2' onClick={()=>router.push('/trips')} >My reservations</button>
                         <button className='hover:bg-neutral-100 w-full text-left px-4 py-2' onClick={()=>router.push('/favorites')}>My favorites</button>
-                        <button className='hover:bg-neutral-100 w-full text-left px-4 py-2' onClick={()=>router.push('/reservations')}>My reservations</button>
+                        <button className='hover:bg-neutral-100 w-full text-left px-4 py-2' onClick={()=>router.push('/reservations')}>My Houses reservations</button>
                         <button className='hover:bg-neutral-100 w-full text-left px-4 py-2' onClick={()=>router.push('/properties')}>My properties</button>
                         <button className='hover:bg-neutral-100 w-full text-left px-4 py-2' onClick={handleLogOut}>Logout</button>
                     </div>

@@ -29,7 +29,7 @@ const RegisterModal = () => {
     }
     try {
       setLoading(true)
-      const response = await fetch(`https://abdelbasset-reserve.vercel.app/api/register`,{
+      const response = await fetch(`http://localhost:3000/api/register`,{
         method:"POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,6 +38,10 @@ const RegisterModal = () => {
       body: JSON.stringify(userInfo), 
       })
       const res = await response.json()
+      console.log(res)
+      if(res?.message){
+        return toast.error(res.message)
+      }
         if(response.status === 201) {
           toast.success("Registred succefully!")
           dispatch(openLogin())

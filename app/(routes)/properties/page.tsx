@@ -26,6 +26,7 @@ const Properties = async () => {
             <div className="w-full h-[70vh] flex flex-col items-center justify-center " >
                 <h1 className="text-lg font-bold" >No properties found!</h1>
                 <p className="text-neutral-500" >Look like you didnt create any listing yet.</p>
+                <p className="text-neutral-500">Click on <span className="font-bold text-black" >Airbnb your home in navbar</span> to create new property!</p>
             </div>
         </div>
         )
