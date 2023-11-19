@@ -16,7 +16,7 @@ interface Query {
     endDate?:string
 }
 
-const url =`http://localhost:3000/api/listing`
+const url =`https://abdelbasset-reserve-abdelbasset10.vercel.app/api/listing`
 
 export const fetchListings = async (query : Query) => {
     const session = await getServerSession(authOptions)
